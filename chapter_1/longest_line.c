@@ -1,13 +1,13 @@
 #include <stdio.h>
 #define MAXLINE 1000 // Maximum input line size
 
-<<<<<<< HEAD
+
 
 // prototypes for all our functionS
 
-=======
+
 // Function prototypes
->>>>>>> refs/remotes/origin/main
+
 int getLine(char line[], int maxline);
 void copy(char to[], char from[]);
 
@@ -20,13 +20,13 @@ int main()
   max = 0;
 
   while ((len = getLine(line, MAXLINE)) > 0)
-<<<<<<< HEAD
+
     if (len > max) {
-=======
+
   {
     if (len > max) 
     {
->>>>>>> refs/remotes/origin/main
+
       max = len;
       copy(longest, line);
     }
@@ -40,11 +40,11 @@ int main()
   return 0;
 }
 
-<<<<<<< HEAD
+
 
 // getline: read a line into s, return lenght
 
-=======
+
 // Function to read a line into s and return length
 >>>>>>> refs/remotes/origin/main
 int getLine(char s[], int lim)
