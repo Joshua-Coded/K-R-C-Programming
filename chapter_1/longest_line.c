@@ -4,7 +4,7 @@
 
 // prototypes for all our functionS
 
-size_t getline(char line[], size_t maxline);
+int getLine(char line[], int maxline);
 void copy(char to[], char from[]);
 
 // print longest input lines
@@ -18,7 +18,7 @@ int main()
 
   max = 0;
 
-  while ((len = getline(line, MAXLINE)) > 0)
+  while ((len = getLine(line, MAXLINE)) > 0)
     if (len > max) {
       max = len;
       copy(longest, line);
@@ -32,7 +32,7 @@ int main()
 
 // getline: read a line into s, return lenght
 
-size_t getline(char s[], size_t *lim)
+int getLine(char s[], int lim)
 {
   int c, i;
 
