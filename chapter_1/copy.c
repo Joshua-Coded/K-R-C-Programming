@@ -4,12 +4,22 @@
 
 int main()
 {
+  
   int c;
-  c = getchar();
+
+  /*c = getchar();
   while (c != EOF)
     {
       putchar(c);
       c = getchar();
     }
+  */
 
+
+  // version 2
+  
+  while((c= getchar()) != EOF)
+    {
+      putchar(c);
+    }
 }
